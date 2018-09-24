@@ -1,0 +1,10 @@
+body {
+  margin: 0%;
+}
+
+.img-countainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=styles.css.map */
