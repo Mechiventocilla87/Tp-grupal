@@ -1,6 +1,7 @@
 body{
     margin: 0%;
 }
+<<<<<<< HEAD
 .main-container{
     .carrousel{
         display: flex;
@@ -27,6 +28,49 @@ body{
 .img-container2{
     width:250px;
     height:250px;
+=======
+header {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: orangered;
+}
+
+// PARA DESKTOP:
+// .menu p {
+//     display: none;
+// }
+
+nav {
+    width: 100%;
+    height: 30px;
+    background-color: orangered;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .titulo-menu:hover{
+        cursor: pointer;
+    }
+}
+
+.lista {
+    display: none;
+    position: absolute;
+}
+
+li {
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+}
+.platos {
+    display:none;
+}
+.img-container{
+>>>>>>> 513b4489509714f3b34bb56958183709deb9fdf5
     display: flex;
     justify-content: space-between;
 }
