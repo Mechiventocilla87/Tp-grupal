@@ -1,10 +1,346 @@
-body {
-  margin: 0%;
+/*styles por Adriana Montilla */
+.carrousel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.carrousel .img-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+}
+.carrousel .img-container:hover .hover {
+  height: 30%;
+}
+.carrousel .img-container img {
+  width: 100%;
+}
+.carrousel .img-container .hover {
+  position: absolute;
+  bottom: 0%;
+  background-color: orangered;
+  opacity: 0.5;
+  width: 100%;
+  transition: height 1s;
+  overflow: hidden;
+  height: 0%;
+}
+.carrousel .img-container .hover .fecha {
+  margin-left: 10px;
+}
+.carrousel .img-container .hover .descripcion {
+  margin-left: 10px;
+}
+.carrousel .nati {
+  display: none;
 }
 
-.img-countainer {
+/* aca finaliza styles por Adriana Montilla */
+/*styles por Mercedes Ventocilla */
+/*variables, mixins*/
+/*section: video_perfil_notas | video*/
+body {
+  margin: 0;
+}
+body .video_perfil_notas .video {
+  display: none;
+}
+body .video_perfil_notas .video .video_descripcion {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: #929292;
+}
+
+/*section: video_perfil_notas | notas*/
+.video_perfil_notas .column_izq .nota-1 {
+  width: 90%;
+  margin: auto;
+}
+.video_perfil_notas .column_izq .nota-1 .img_nota_container {
+  display: none;
+}
+
+.video_perfil_notas .column_izq .linea_nota {
+  display: none;
+}
+.video_perfil_notas .column_izq .nota-1:last-child {
+  display: none;
+}
+
+.nota-1 .fecha_comentarios {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.nota-1 .fecha_comentarios .autor {
+  font-family: "IBM Plex Mono", monospace;
+  color: #929292;
+  font-size: 14px;
+  width: 50%;
+  text-align: center;
+}
+.nota-1 .fecha_comentarios .autor p {
+  margin: 0;
+}
+
+.fecha_comentarios .iconos {
+  font-family: "IBM Plex Mono", monospace;
+  color: #929292;
+  font-size: 14px;
+  display: block;
+  width: 28%;
+}
+.fecha_comentarios .iconos .iconos_primero {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.fecha_comentarios .iconos .iconos_primero .icon_heart {
+  font-size: 15px;
+  color: #929292;
+}
+.fecha_comentarios .iconos .iconos_primero .favoritos {
+  margin-right: 15px;
+}
+.fecha_comentarios .iconos .iconos_primero .icon_comment {
+  font-size: 15px;
+  color: #929292;
+}
+
+.fecha_comentarios .iconos .icon_share {
+  font-size: 15px;
+  color: #929292;
+  margin: auto;
+  width: 12%;
+}
+
+.texto_descripion .titulo_entrada {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.texto_descripion .cuerpo_entrada {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: normal;
+  color: #929292;
+  text-align: center;
+  font-size: 17px;
+  height: 180px;
+}
+.texto_descripion button {
+  background-color: #FDE2DA;
+  color: black;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/*video_perfil_notas | perfil*/
+.perfil .sobremi {
+  font-size: 15px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  background-color: #FDE2DA;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfil .foto {
+  border-radius: 50%;
+  width: 68%;
+  height: 240px;
+  margin: 21px auto;
+}
+.perfil .foto img {
+  width: 100%;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.perfil .presentacion {
+  width: 90%;
+  margin: auto;
+}
+.perfil .presentacion .nombre {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+.perfil .presentacion .edad {
+  font-family: "IBM Plex Mono", monospace;
+  color: #929292;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.perfil .Newsletter {
+  font-size: 15px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  background-color: #FDE2DA;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*aca finaliza styles por Mercedes Ventocilla */
+@media (min-width: 800px) {
+  /*styles por Adriana Montilla */
+  .taco {
+    width: 100%;
+    display: none;
+  }
+  .taco img {
+    width: 100%;
+    display: none;
+  }
+
+  .carrousel {
+    justify-content: space-between;
+    height: 500px;
+  }
+  .carrousel .img-container {
+    display: inline-block;
+    width: 23%;
+    height: 467px;
+  }
+  .carrousel .img-container:hover .hover {
+    height: 21%;
+  }
+  .carrousel .img-container:hover .hover .fecha {
+    font-size: 12px;
+  }
+  .carrousel .img-container:hover .hover .descripcion {
+    font-size: 14px;
+  }
+
+  /* aca finaliza styles por Adriana Montilla */
+  /*styles por Mercedes Ventocilla */
+  .video_perfil_notas {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+  .video_perfil_notas .column_izq {
+    width: 68%;
+    margin-right: 2%;
+  }
+  .video_perfil_notas .column_izq .video {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .video_perfil_notas .column_izq .nota-1 {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .video_perfil_notas .column_izq .linea_nota {
+    display: block;
+    border: 1px solid #E4DFE0;
+    margin-right: 20px;
+  }
+  .video_perfil_notas .column_izq .nota-1 .img_nota_container {
+    display: block;
+    width: 45%;
+    height: 230px;
+    border-radius: 30px;
+    margin-right: 35px;
+  }
+  .video_perfil_notas .column_izq .nota-1 .img_nota_container figure {
+    margin: 0;
+  }
+  .video_perfil_notas .column_izq .nota-1 .img_nota_container img {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  .video_perfil_notas .column_izq .nota-1:last-child {
+    display: flex;
+  }
+
+  .texto_descripion {
+    width: 55%;
+    margin-right: 20px;
+  }
+  .texto_descripion .fecha_comentarios .autor {
+    text-align: left;
+    font-size: 14px;
+  }
+  .texto_descripion .fecha_comentarios .iconos {
+    justify-content: flex-end;
+    display: flex;
+  }
+  .texto_descripion .titulo_entrada {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .texto_descripion .iconos .iconos_primero {
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .texto_descripion .cuerpo_entrada {
+    text-align: left;
+    font-size: 14px;
+    width: 98%;
+    font-weight: normal;
+  }
+  .texto_descripion .cuerpo_entrada button {
+    width: 35%;
+    height: 32px;
+  }
+
+  .video_perfil_notas .perfil {
+    width: 25%;
+  }
+  .video_perfil_notas .perfil .sobremi {
+    width: 100%;
+    font-size: 12px;
+  }
+  .video_perfil_notas .perfil .foto {
+    height: 200px;
+  }
+  .video_perfil_notas .perfil .foto img {
+    height: 200px;
+  }
+  .video_perfil_notas .perfil .Newsletter {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .video_perfil_notas .perfil .presentacion .nombre {
+    font-size: 20px;
+  }
+  .video_perfil_notas .perfil .presentacion .edad {
+    font-size: 12px;
+  }
+
+  /*aca finaliza styles por Mercedes Ventocilla */
 }
 
 /*# sourceMappingURL=styles.css.map */

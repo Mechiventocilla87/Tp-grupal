@@ -4,91 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimun-scale=1.0,maximun-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
-<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Blog de Cocina</h1>
-    </header>
-    <nav>MENU
-        <ul>
-            <li>HOME</li>
-            <li>PLATOS
-                <ul>
-                    <li>Ensalada</li>
-                    <li>Carne</li>
-                    <li>Helado</li>
-                </ul>
-            </li>
-            <li>SOBRE MI </li>
-            <li>CONTACTO</li>
-        </ul>
-    </nav>
-    <!-- PONER ICONO DENTRO DEL DIV -->
+
     <main class="main-container">
-        <section class="carrousel">
-            <div class="img-container">
-                   <img src="imagenes/img-1.jpg" alt="taco">
-                   <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
+      <!--sector por Adriana Montilla-->
+      <section class="carrousel">
+           <div class="img-container">
+                  <img src="../imagenes/img-1.jpg" alt="taco">
+                  <div class="hover">
+                  <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
                    <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
             </div>
-            <div class="img-container">
-                    <img src="imagenes/img-2.jpg" alt="salmon">
-                    <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
-                    <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
-             </div>
-             <div class="img-container">
-                    <img src="imagenes/img-3.jpg" alt="yogurt">
-                    <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
-                    <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
-             </div>
-             <div class="img-container">
-                    <img src="imagenes/img-4.jpg" alt="tostadas">
-                    <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
-                    <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
-             </div>
-        </section>
-        <section class="secciones">
-            <div class="3">
-                <img src="" alt="carpacho">
+           </div>
+
+           <div class="img-container nati">
+               <img src="../imagenes/img-2.jpg" alt="salmon">
+                <div class="hover">
+                   <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
+                   <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
+               </div>
             </div>
-            <div>
-                <button>PLATOS</button>
+            <div class="img-container nati">
+                   <img src="../imagenes/img-3.jpg" alt="yogurt">
+                   <div class="hover">
+                       <p class="fecha"> Mayo 17, 2017 | 5 comentarios</p>
+                       <p class="descripcion">"Los mejores tacos del pais en pocos pasos."</p>
+                   </div>
             </div>
-            <div class="3">
-                    <img src="" alt="pastel">
+            <div class="img-container nati">
+               <img src="../imagenes/img-4.jpg" alt="tostadas">
+               <div class="hover">
+                   <p class="fecha"> Diciembre 23, 2017 | 10 comentarios</p>
+                   <p class="descripcion">"Unas tostadas sabrosas para arrancar bien el día."</p>
+               </div>
             </div>
-            <div>
-                    <button>RECETAS</button>
+       </section>
+       <!---aca finaliza sector por Adriana Montilla-->
+
+      <!---sector por Mercedes Ventocilla-->
+        <section class="video_perfil_notas">
+          <div class="column_izq">
+            <div class="video">
+              <iframe src="https://player.vimeo.com/video/108995817" width="100%" height="420" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <p class="video_descripcion">25 DE ABRIL | ¿Cómo preparar los mejores muffins?</p>
             </div>
-                <div class="3"> </div>
-            <div>
-                        <button>PLATOS</button>
+            <hr class="linea_nota">
+            <div class="nota-1">
+              <div class="img_nota_container">
+                <figure>
+                  <img src="../imagenes/nota1.jpg" alt="">
+                </figure>
+              </div>
+              <div class="texto_descripion">
+                <div class="fecha_comentarios">
+                  <div class="autor">
+                    <p>By María | Mayo 19, 2017</p>
+                  </div>
+                  <div class="iconos">
+                    <div class="iconos_primero">
+                      <div class="icon_heart">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <span class="favoritos">20</span>
+                      <div class="icon_comment">
+                        <i class="far fa-comments"></i>
+                      </div>
+                      <span class="comentarios">10</span>
+                    </div>
+                      <div class="icon_share">
+                        <i class="fas fa-share-alt"></i>
+                      </div>
+                  </div>
+                </div>
+                <div class="titulo_entrada">
+                  <span>Delicias dulces</span>
+                </div>
+                <div class="cuerpo_entrada">
+                  <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+                  <button type="button" name="button">Leer más</button>
+                </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <video src=""></video>
-            <p> xcxcxcxcxcxc</p>
-        </section>
-        <aside class="perfil">
+            <hr class="linea_nota">
+            <div class="nota-1">
+              <div class="img_nota_container">
+                <figure>
+                  <img src="../imagenes/nota2.jpg" alt="">
+                </figure>
+              </div>
+              <div class="texto_descripion">
+                <div class="fecha_comentarios">
+                  <div class="autor">
+                    <p>By María | Mayo 19, 2017</p>
+                  </div>
+                  <div class="iconos">
+                    <div class="iconos_primero">
+                      <div class="icon_heart">
+                        <i class="far fa-heart"></i>
+                      </div>
+                      <span class="favoritos">20</span>
+                      <div class="icon_comment">
+                        <i class="far fa-comments"></i>
+                      </div>
+                      <span class="comentarios">70</span>
+                    </div>
+                      <div class="icon_share">
+                        <i class="fas fa-share-alt"></i>
+                      </div>
+                  </div>
+                </div>
+                <div class="titulo_entrada">
+                  <span>Comidas simples</span>
+                </div>
+                <div class="cuerpo_entrada">
+                  <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+                  <button type="button" name="button">Leer más</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="perfil">
             <div class="sobremi">
-                <p> SOBRE MI</p>
+              <p>SOBRE MI</p>
             </div>
-            <div class="foto">
-                <img src="" alt="">
-            </div>
-            <div class="presentacion">
-                <p class="nombre">Natalia Guida</p>
-                <p class="edad">tengo 23 </p>
-            </div>
-            <div class="Newsletter">
-                <p>Newsletter</p>
-            </div>
-        </aside>
-
-    </main>
-
-    
-</body>
+           <div class="foto">
+             <img src="../imagenes/cerezo.jpg" alt="geranio">
+           </div>
+           <div class="presentacion">
+             <p class="nombre">Natalia Guida</p>
+             <p class="edad">Tengo 23 años, hace dos que estudio cocina y soy fanatica de la comida, espero que les guste mi contenido.</p>
+           </div>
+           <div class="Newsletter">
+             <p>NEWSLETTER</p>
+           </div>
+         </div>
+        </section>
+      </main>
+  </body>
 </html>
