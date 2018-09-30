@@ -7,10 +7,52 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+    <title>Mi Blog de Cocina</title>
 </head>
 <body>
+  <!--sector por Micol-->
+    <header>
+         <h1>Mi Blog de Cocina</h1>
+     </header>
+     <section class="menux-desktop">
+         <div class="navbar-d">
+                 <div class="dropdown-d">
+                         <i class="fas fa-bars"></i>
+                 <button class="dropbtn-d">MENU
+                 </button>
+                 <ul class="dropdown-content-d">
+                     <li href="#">HOME</li>
+                     <li class="platos" href="#">PLATOS
+                         <i class="fas fa-caret-down"></i>
+                         <ul class="submenu">
+                             <li href="#">Ensalada</li>
+                             <li href="#">Carne</li>
+                             <li href="#">Helado</li>
+                         </ul>
+                     </li>
+                     <li href="#">SOBRE MI</li>
+                     <li href="#">CONTACTO</li>
+                 </ul>
+                 </div>
+         </div>
+     </section>
 
+     <section class="menux-mobile">
+         <div class="navbar-m">
+                 <div class="dropdown-m">
+                    <i class="fas fa-bars"></i>
+                 <button class="dropbtn-m">MENU
+                 </button>
+                 <ul class="dropdown-content-m">
+                     <li href="#">HOME</li>
+                     <li class="platos" href="#">PLATOS</li>
+                     <li href="#">SOBRE MI</li>
+                     <li href="#">CONTACTO</li>
+                 </ul>
+                 </div>
+         </div>
+     </section>
+      <!--aca finaliza el sector por Micol-->
     <main class="main-container">
       <!--sector por Adriana Montilla-->
       <section class="carrousel">
@@ -45,6 +87,30 @@
             </div>
        </section>
        <!---aca finaliza sector por Adriana Montilla-->
+       <!---sector por Micol : secciones de recetas platos y exoticos-->
+       <section class="secciones">
+           <div class="container">
+               <figure class="img-container">
+                   <img src="../imagenes/platos.jpeg" class="image"/>
+                   <p class="button">PLATOS</p>
+               </figure>
+           </div>
+
+           <div class="container">
+               <figure class="img-container">
+                   <img src="../imagenes/recetas.jpg" class="image"/>
+                   <p class="button"><a href="recetas.html">RECETAS</a></p>
+               </figure>
+           </div>
+
+           <div class=container>
+               <figure class="img-container">
+                   <img src="../imagenes/exoticos.JPG" class="image"/>
+                   <p class="button">EXOTICOS</p>
+               </figure>
+           </div>
+       </section>
+      <!---aca finaliza sector por Micol-->
 
       <!---sector por Mercedes Ventocilla-->
         <section class="video_perfil_notas">
@@ -145,5 +211,32 @@
          </div>
         </section>
       </main>
+      <!---aca finaliza sector por Mercedes Ventocilla-->
+      <!---sector por Magali-->
+      <footer>
+         <div class= 'facebook'>
+             <i class="fab fa-facebook-f"></i> <span>FACEBOOK</span>
+         </div>
+          <div class='twitter'>
+             <i class="fab fa-twitter"></i> <span> TWITTER</span>
+         </div>
+         <div class='google'>
+               <i class="fab fa-google"></i> <span>GOOGLE +</span>
+         </div>
+         <div class='linkedin'>
+                <i class="fab fa-linkedin"></i> <span>LINKEDIN</span>
+         </div>
+         <div class= 'instagram'>
+               <i class="fab fa-instagram"></i> <span> INSTAGRAM</span>
+          </div>
+         <div class= 'youtube'>
+                 <i class="fab fa-youtube"></i> <span>YOUTUBE </span>
+         </div>
+          <div class='arrow'>
+                 <i class="fas fa-arrow-circle-up"></i>
+         </div>
+
+      </footer>
+      <!---aca finaliza el sector por Magali-->
   </body>
 </html>

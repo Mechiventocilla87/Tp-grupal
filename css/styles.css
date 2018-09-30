@@ -1,3 +1,83 @@
+@charset "UTF-8";
+/*------------------------------------------*/
+/*styles para Home*/
+/*------------------------------------------*/
+/*styles por Micol */
+body {
+  margin: 0%;
+}
+
+header {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  color: orangered;
+}
+
+.navbar-m {
+  width: 100%;
+  background-color: orangered;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.dropbtn-m {
+  background-color: orangered;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-m {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.dropdown-m .fa-bars {
+  margin-top: 17px;
+  color: white;
+}
+
+.dropdown-content-m {
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color: orangered;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-m li {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.menux-mobile {
+  display: block;
+}
+
+.dropdown-content-m li:hover {
+  background-color: orangered;
+}
+
+.dropdown-m:hover .dropdown-content-m {
+  display: block;
+}
+
+.dropdown-m:hover .dropbtn-m {
+  background-color: orangered;
+}
+
+.menux-desktop {
+  display: none;
+}
+
+/* aca finaliza styles por Micol */
 /*styles por Adriana Montilla */
 .carrousel {
   display: flex;
@@ -39,6 +119,37 @@
 }
 
 /* aca finaliza styles por Adriana Montilla */
+/*styles por Micol */
+.secciones {
+  flex-direction: column;
+}
+.secciones .container {
+  width: 200px;
+  position: relative;
+}
+.secciones .img-container {
+  width: 300px;
+  height: 200px;
+}
+.secciones .img-container img {
+  width: 100%;
+}
+.secciones .button {
+  width: 150px;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  background-color: #ddd;
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+.secciones .button:hover {
+  background-color: orangered;
+  cursor: pointer;
+}
+
+/*aca finaliza styles por Micol */
 /*styles por Mercedes Ventocilla */
 /*variables, mixins*/
 /*section: video_perfil_notas | video*/
@@ -204,7 +315,98 @@ body .video_perfil_notas .video .video_descripcion {
 }
 
 /*aca finaliza styles por Mercedes Ventocilla */
+/*styles por Magalí */
+footer {
+  border-bottom: 2px solid #E6E6E6;
+  display: flex;
+  justify-content: space-around;
+  font-family: "IBM plex mono", monospace;
+  color: #A4A4A4;
+  font-size: 18px;
+  margin-top: 36px;
+}
+footer i {
+  padding-bottom: 60px;
+}
+footer span {
+  display: none;
+}
+footer .arrow {
+  color: #FB8A01;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/*aca finaliza styles por Magalí */
+/*aca finaliza styles para Home*/
+/*------------------------------------------*/
+/*styles para Recetas*/
+/*------------------------------------------*/
+body {
+  margin: 0;
+}
+
+.main-container .banner {
+  width: 100%;
+  margin-top: 25px;
+}
+.main-container .banner figure {
+  margin: 0;
+}
+.main-container .banner figure img {
+  width: 100%;
+}
+
 @media (min-width: 800px) {
+  /*------------------------------------------*/
+  /*styles para Home*/
+  /*------------------------------------------*/
+  /*styles por Micol */
+  .menux-mobile {
+    display: none;
+  }
+
+  .menux-desktop {
+    display: inline;
+  }
+
+  .navbar-d {
+    height: 50px;
+    background-color: white;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .navbar-d .dropbtn-d {
+    display: none;
+  }
+  .navbar-d .fa-bars {
+    display: none;
+  }
+  .navbar-d .dropdown-content-d {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  .navbar-d .dropdown-content-d li:hover {
+    color: orangered;
+  }
+  .navbar-d .platos {
+    position: relative;
+  }
+  .navbar-d .submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+  }
+  .navbar-d .platos:hover .submenu {
+    display: block;
+    background-color: whitesmoke;
+  }
+
+  /* aca finaliza styles por Micol */
   /*styles por Adriana Montilla */
   .taco {
     width: 100%;
@@ -235,6 +437,27 @@ body .video_perfil_notas .video .video_descripcion {
   }
 
   /* aca finaliza styles por Adriana Montilla */
+  /*styles por Micol : secciones de recetas platos y exoticos */
+  .secciones {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .secciones .container {
+    position: relative;
+  }
+  .secciones .img-container {
+    width: 300px;
+    margin: auto;
+  }
+  .secciones .img-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /*aca finaliza styles por Micol */
   /*styles por Mercedes Ventocilla */
   .video_perfil_notas {
     display: flex;
@@ -341,6 +564,95 @@ body .video_perfil_notas .video .video_descripcion {
   }
 
   /*aca finaliza styles por Mercedes Ventocilla */
+  /*styles por Magalí */
+  footer {
+    margin-bottom: 20px;
+  }
+  footer .facebook {
+    display: flex;
+    justify-content: center;
+  }
+  footer .facebook i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .facebook span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .twitter {
+    display: flex;
+    justify-content: center;
+  }
+  footer .twitter i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .twitter span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .google {
+    display: flex;
+    justify-content: center;
+  }
+  footer .google i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .google span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .linkedin {
+    display: flex;
+    justify-content: center;
+  }
+  footer .linkedin i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .linkedin span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .instagram {
+    display: flex;
+    justify-content: center;
+  }
+  footer .instagram i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .instagram span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .youtube {
+    display: flex;
+    justify-content: center;
+  }
+  footer .youtube i {
+    font-size: 17px;
+    margin-top: 2px;
+  }
+  footer .youtube span {
+    margin-left: 12px;
+    display: flex;
+    font-size: 18px;
+  }
+  footer .arrow {
+    display: none;
+  }
+
+  /*aca finaliza styles por Magalí */
+  /*aca finaliza styles para Home*/
+  /*------------------------------------------*/
 }
 
 /*# sourceMappingURL=styles.css.map */
