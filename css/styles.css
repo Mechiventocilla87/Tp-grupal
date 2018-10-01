@@ -424,7 +424,7 @@ body {
   .carrousel .img-container {
     display: inline-block;
     width: 23%;
-    height: 467px;
+    height: 485px;
   }
   .carrousel .img-container:hover .hover {
     height: 21%;

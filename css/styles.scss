@@ -441,9 +441,9 @@ body{
   .taco{
       width:100%;
       display:none;
-      img{
-          width:100%;
-          display: none;
+    img{
+      width:100%;
+      display: none;
       }
   }
   .carrousel{
@@ -452,14 +452,14 @@ body{
       .img-container{
           display:inline-block;
           width:23%;
-          height: 467px;
+          height: 485px;
           &:hover{
             .hover{
               height: 21%;
-              .fecha{
+            .fecha{
                 font-size: 12px;
               }
-              .descripcion{
+            .descripcion{
                 font-size: 14px;
               }
             }
