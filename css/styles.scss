@@ -466,6 +466,31 @@ body{
           }
       }
   }
+
+  /*Adriana receta*/
+  .casa{
+    font-family: 'IBM plex mono', monospace;
+    .casa-container {
+      width: 400px;
+      margin-left:20px; 
+      display:flex;
+      justify-content: space-around;
+
+    }
+    p{
+      margin: 0;
+    }
+    .casita{
+      display: flex;
+      .fa-home{
+        margin-right: 8px;
+      }
+    }
+    .single{
+      color: #929292
+    }
+    
+  }
 /* aca finaliza styles por Adriana Montilla */
 /*styles por Micol : secciones de recetas platos y exoticos */
 .secciones {
