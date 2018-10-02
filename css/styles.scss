@@ -185,7 +185,7 @@ $colorTexto: #929292;
 /*section: video_perfil_notas | video*/
 body{
   margin:0;
-  .video_perfil_notas{
+  .fila_video_perfil{
     .video{
       display: none;
       .video_descripcion{
@@ -200,7 +200,9 @@ body{
 /*section: video_perfil_notas | notas*/
 
 .video_perfil_notas{
-  .column_izq{
+  display: flex;
+  flex-direction: column-reverse;
+  .fila_notas{
     .nota-1{
       width: 90%;
       margin: auto;
@@ -212,7 +214,7 @@ body{
   }
 
 .video_perfil_notas{
-  .column_izq{
+  .fila_notas{
     .linea_nota{
       display: none;
     }
@@ -467,30 +469,6 @@ body{
       }
   }
 
-  /*Adriana receta*/
-  .casa{
-    font-family: 'IBM plex mono', monospace;
-    .casa-container {
-      width: 400px;
-      margin-left:20px; 
-      display:flex;
-      justify-content: space-around;
-
-    }
-    p{
-      margin: 0;
-    }
-    .casita{
-      display: flex;
-      .fa-home{
-        margin-right: 8px;
-      }
-    }
-    .single{
-      color: #929292
-    }
-    
-  }
 /* aca finaliza styles por Adriana Montilla */
 /*styles por Micol : secciones de recetas platos y exoticos */
 .secciones {
@@ -516,33 +494,34 @@ body{
   .video_perfil_notas{
     display: flex;
     justify-content: center;
-    width: 90%;
+    flex-direction: column;
+    width: 85%;
     margin: auto;
-    .column_izq{
-      width: 68%;
-      margin-right: 2%;
+    .fila_video_perfil{
+      display: flex;
       .video{
         display: block;
-        width: 100%;
+        width: 73%;
+        margin-right: 2%;
         margin-bottom: 40px;
       }
-      .nota-1{
-        width: 100%;
-        height: 270px;
-        display: flex;
-        margin-top: 30px;
-      }
+
     }
   }
 
 .video_perfil_notas{
-  .column_izq{
+  .fila_notas{
+    width: 75%;
     .linea_nota{
       display: block;
       border: 1px solid #E4DFE0;
       margin-right: 20px;
     }
     .nota-1{
+      width: 100%;
+      height: 270px;
+      display: flex;
+      margin-top: 30px;
       .img_nota_container{
         display: block;
         width: 45%;
@@ -562,7 +541,7 @@ body{
     }
 
 .video_perfil_notas{
-  .column_izq{
+  .fila_notas{
     .nota-1:last-child{
       display: flex;
     }
@@ -733,4 +712,143 @@ body{
 /*aca finaliza styles por Magalí */
 /*aca finaliza styles para Home*/
 /*------------------------------------------*/
+/*styles para Recetas*/
+/*------------------------------------------*/
+/*styles por Adriana receta*/
+@mixin styles_caja-redes{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  margin: 8px;
+}
+
+@mixin styles_icono-redes{
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+}
+
+.casa{
+  font-family: 'IBM plex mono', monospace;
+  .casa-container {
+    width: 300px;
+    margin-left:120px;
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-around;
+
+  }
+  p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    &::after{
+      content: ">";
+      margin-left: 10px;
+    }
  }
+  .casita{
+    display: flex;
+    .fa-home{
+      margin-right: 8px;
+    }
+  }
+  .single{
+    color: #929292;
+    p{
+      &::after{
+        content: "";
+    }
+    }
+  }
+
+}
+
+    .cuerpo_principal{
+      margin-top: 50px;
+      .notacompleta{
+        width: 50%;
+        margin: auto;
+        .foto_redes{
+          display: flex;
+          .redes_sociales{
+            width: 15%;
+            height: 360px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .redes_sociales{
+      .facebook_recetas{
+        @include styles_caja-redes;
+        background-color: #3A5898;
+        .fa-facebook-f{
+        @include styles_icono-redes;
+        left: 7px;
+        top: 3px;
+        }
+      }
+      .twitter_recetas{
+        @include styles_caja-redes;
+        background-color: #55ACEE;
+        .fa-twitter{
+         @include styles_icono-redes;
+         left: 3px;
+         top: 3px;
+        }
+      }
+    }
+
+    .redes_sociales{
+      .google_recetas{
+        @include styles_caja-redes;
+        background-color: #DD4B39;
+        .fa-google-plus-g{
+        @include styles_icono-redes;
+        left: 3px;
+        top: 3px;
+        }
+      }
+      .instagram_recetas{
+        @include styles_caja-redes;
+        background-color: #906348;
+        .fa-instagram{
+         @include styles_icono-redes;
+         left: 4px;
+         top: 3px;
+        }
+      }
+    }
+
+    .redes_sociales{
+      .pinterest_recetas{
+        @include styles_caja-redes;
+        background-color: #CB2229;
+        .fa-pinterest-p{
+        @include styles_icono-redes;
+        left: 6px;
+        top: 3px;
+        }
+      }
+    }
+
+
+
+
+    .container_imagen{
+      width: 85%;
+      height: 500px;
+      border-radius: 30px;
+      img{
+        width: 100%;
+        border-radius: 30px;
+      }
+    }
+
+}

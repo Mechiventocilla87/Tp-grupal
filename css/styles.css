@@ -156,28 +156,32 @@ header {
 body {
   margin: 0;
 }
-body .video_perfil_notas .video {
+body .fila_video_perfil .video {
   display: none;
 }
-body .video_perfil_notas .video .video_descripcion {
+body .fila_video_perfil .video .video_descripcion {
   font-family: "IBM Plex Mono", monospace;
   font-size: 10px;
   color: #929292;
 }
 
 /*section: video_perfil_notas | notas*/
-.video_perfil_notas .column_izq .nota-1 {
+.video_perfil_notas {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.video_perfil_notas .fila_notas .nota-1 {
   width: 90%;
   margin: auto;
 }
-.video_perfil_notas .column_izq .nota-1 .img_nota_container {
+.video_perfil_notas .fila_notas .nota-1 .img_nota_container {
   display: none;
 }
 
-.video_perfil_notas .column_izq .linea_nota {
+.video_perfil_notas .fila_notas .linea_nota {
   display: none;
 }
-.video_perfil_notas .column_izq .nota-1:last-child {
+.video_perfil_notas .fila_notas .nota-1:last-child {
   display: none;
 }
 
@@ -436,29 +440,6 @@ body {
     font-size: 14px;
   }
 
-  /*Adriana receta*/
-  .casa {
-    font-family: "IBM plex mono", monospace;
-  }
-  .casa .casa-container {
-    width: 400px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .casa p {
-    margin: 0;
-  }
-  .casa .casita {
-    display: flex;
-  }
-  .casa .casita .fa-home {
-    margin-right: 8px;
-  }
-  .casa .single {
-    color: #929292;
-  }
-
   /* aca finaliza styles por Adriana Montilla */
   /*styles por Micol : secciones de recetas platos y exoticos */
   .secciones {
@@ -485,46 +466,50 @@ body {
   .video_perfil_notas {
     display: flex;
     justify-content: center;
-    width: 90%;
+    flex-direction: column;
+    width: 85%;
     margin: auto;
   }
-  .video_perfil_notas .column_izq {
-    width: 68%;
-    margin-right: 2%;
+  .video_perfil_notas .fila_video_perfil {
+    display: flex;
   }
-  .video_perfil_notas .column_izq .video {
+  .video_perfil_notas .fila_video_perfil .video {
     display: block;
-    width: 100%;
+    width: 73%;
+    margin-right: 2%;
     margin-bottom: 40px;
   }
-  .video_perfil_notas .column_izq .nota-1 {
+
+  .video_perfil_notas .fila_notas {
+    width: 75%;
+  }
+  .video_perfil_notas .fila_notas .linea_nota {
+    display: block;
+    border: 1px solid #E4DFE0;
+    margin-right: 20px;
+  }
+  .video_perfil_notas .fila_notas .nota-1 {
     width: 100%;
     height: 270px;
     display: flex;
     margin-top: 30px;
   }
-
-  .video_perfil_notas .column_izq .linea_nota {
-    display: block;
-    border: 1px solid #E4DFE0;
-    margin-right: 20px;
-  }
-  .video_perfil_notas .column_izq .nota-1 .img_nota_container {
+  .video_perfil_notas .fila_notas .nota-1 .img_nota_container {
     display: block;
     width: 45%;
     height: 230px;
     border-radius: 30px;
     margin-right: 35px;
   }
-  .video_perfil_notas .column_izq .nota-1 .img_nota_container figure {
+  .video_perfil_notas .fila_notas .nota-1 .img_nota_container figure {
     margin: 0;
   }
-  .video_perfil_notas .column_izq .nota-1 .img_nota_container img {
+  .video_perfil_notas .fila_notas .nota-1 .img_nota_container img {
     width: 100%;
     border-radius: 50px;
   }
 
-  .video_perfil_notas .column_izq .nota-1:last-child {
+  .video_perfil_notas .fila_notas .nota-1:last-child {
     display: flex;
   }
 
@@ -676,6 +661,147 @@ body {
   /*aca finaliza styles por Magalí */
   /*aca finaliza styles para Home*/
   /*------------------------------------------*/
+  /*styles para Recetas*/
+  /*------------------------------------------*/
+  /*styles por Adriana receta*/
+  .casa {
+    font-family: "IBM plex mono", monospace;
+  }
+  .casa .casa-container {
+    width: 300px;
+    margin-left: 120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .casa p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .casa p::after {
+    content: ">";
+    margin-left: 10px;
+  }
+  .casa .casita {
+    display: flex;
+  }
+  .casa .casita .fa-home {
+    margin-right: 8px;
+  }
+  .casa .single {
+    color: #929292;
+  }
+  .casa .single p::after {
+    content: "";
+  }
+
+  .cuerpo_principal {
+    margin-top: 50px;
+  }
+  .cuerpo_principal .notacompleta {
+    width: 50%;
+    margin: auto;
+  }
+  .cuerpo_principal .notacompleta .foto_redes {
+    display: flex;
+  }
+  .cuerpo_principal .notacompleta .foto_redes .redes_sociales {
+    width: 15%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redes_sociales .facebook_recetas {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin: 8px;
+    background-color: #3A5898;
+  }
+  .redes_sociales .facebook_recetas .fa-facebook-f {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    left: 7px;
+    top: 3px;
+  }
+  .redes_sociales .twitter_recetas {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin: 8px;
+    background-color: #55ACEE;
+  }
+  .redes_sociales .twitter_recetas .fa-twitter {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    left: 3px;
+    top: 3px;
+  }
+
+  .redes_sociales .google_recetas {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin: 8px;
+    background-color: #DD4B39;
+  }
+  .redes_sociales .google_recetas .fa-google-plus-g {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    left: 3px;
+    top: 3px;
+  }
+  .redes_sociales .instagram_recetas {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin: 8px;
+    background-color: #906348;
+  }
+  .redes_sociales .instagram_recetas .fa-instagram {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    left: 4px;
+    top: 3px;
+  }
+
+  .redes_sociales .pinterest_recetas {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    margin: 8px;
+    background-color: #CB2229;
+  }
+  .redes_sociales .pinterest_recetas .fa-pinterest-p {
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    left: 6px;
+    top: 3px;
+  }
+
+  .container_imagen {
+    width: 85%;
+    height: 500px;
+    border-radius: 30px;
+  }
+  .container_imagen img {
+    width: 100%;
+    border-radius: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
