@@ -263,11 +263,10 @@ body{
   .fecha_comentarios{
     display: flex;
     justify-content: space-between;
-    .autor{
+    .mayo{
       width: 50%;
       text-align: center;
       @include texto_descripcion_arriba;
-
       p{
         margin: 0;
       }
@@ -598,7 +597,10 @@ body{
     .nota-1{
       .fecha_comentarios{
         margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
         .autor{
+          @include texto_descripcion_arriba;
           text-align: left;
           width: 300px;
 
@@ -607,6 +609,7 @@ body{
           @include texto_descripcion_arriba;
           width: 150px;
           display: flex;
+          margin-top: 13px;
           justify-content: space-between;
 
         }
@@ -818,11 +821,13 @@ body{
   }
 }
 
+
   .texto_descripcion{
     width: 55%;
     margin-right: 20px;
     .fecha_comentarios{
       .autor{
+
         text-align: left;
         font-size: 14px;
       }
