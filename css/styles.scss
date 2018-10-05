@@ -16,7 +16,7 @@ header {
 // MOBIBLE:
 
 .navbar-m {
-   width: 100%;
+   width: 95%;
    background-color: orangered;
    font-family: 'IBM Plex Mono', monospace;
    border-radius: 10px;
@@ -30,15 +30,17 @@ header {
    border: none;
 }
 
-.dropdown-m {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   .fa-bars {
-       margin-top: 17px;
-       color: white;
-   }
-}
+  .dropdown-m {
+     position: relative;
+     display: flex;
+     justify-content: center;
+     .fa-bars {
+         margin-top: 17px;
+         color: white;
+     }
+  }
+
+
 
 .dropdown-content-m {
    display: none;
@@ -185,7 +187,6 @@ $colorTexto: #929292;
   font-weight: normal;
   color: $colorTexto;
   font-size: 17px;
-  height: 180px;
 }
 
 @mixin box_perfil (){
@@ -359,6 +360,7 @@ body{
     }
   }
   /*aca finaliza styles por Mercedes Ventocilla */
+
   /*styles por Magalí */
   footer{
     border-bottom: 2px solid #E6E6E6;
@@ -411,7 +413,7 @@ body{
 .casa{
   font-family: 'IBM plex mono', monospace;
   .casa-container {
-    width: 100%;
+    width: 90%;
     margin-left:20px;
     margin-top: 20px;
     display:flex;
@@ -597,13 +599,41 @@ body{
         margin-left: 20px;
       }
       .cuerpo_entrada{
-        @include estilos_cuerpo_entrada
+        @include estilos_cuerpo_entrada;
       }
 
     }
+  /*styles por Magalí */
+   .nota-1{
+     .pie{
+       font-family: 'IBM plex mono', monospace;
+       color: #929292;
+       blockquote{
+         border-left: 2px solid #FC784E;
+         color: black;
+         margin: 40px 0px;
+         padding-left: 20px;
+         .estela{
+           color: #929292;
+         }
+       }
+       ul{
+         list-style: none;
+         padding:0px;
+
+           li::before{
+             content: "•";
+             margin-right: 9px;
+             color:#FC784E;
+             margin-bottom: 5px;
+
+           }
 
 
-
+       }
+     }
+   }
+   /*aca finaliza styles por Magalí */
 
 
 
@@ -1045,7 +1075,15 @@ body{
        .nota-1{
          .cuerpo_entrada{
            font-size: 13px;
+           height: 70px;
          }
+       }
+     }
+
+   /*styles por Magalí*/
+     .nota-1{
+       .pie{
+         font-size: 13px;
        }
      }
 

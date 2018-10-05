@@ -14,7 +14,7 @@ header {
 }
 
 .navbar-m {
-  width: 100%;
+  width: 95%;
   background-color: orangered;
   font-family: "IBM Plex Mono", monospace;
   border-radius: 10px;
@@ -247,7 +247,6 @@ body .fila_video_perfil .video .video_descripcion {
   font-weight: normal;
   color: #929292;
   font-size: 17px;
-  height: 180px;
   text-align: center;
 }
 .texto_descripcion button {
@@ -373,7 +372,7 @@ body {
   font-family: "IBM plex mono", monospace;
 }
 .casa .casa-container {
-  width: 100%;
+  width: 90%;
   margin-left: 20px;
   margin-top: 20px;
   display: flex;
@@ -549,9 +548,34 @@ body {
   font-weight: normal;
   color: #929292;
   font-size: 17px;
-  height: 180px;
 }
 
+/*styles por Magalí */
+.nota-1 .pie {
+  font-family: "IBM plex mono", monospace;
+  color: #929292;
+}
+.nota-1 .pie blockquote {
+  border-left: 2px solid #FC784E;
+  color: black;
+  margin: 40px 0px;
+  padding-left: 20px;
+}
+.nota-1 .pie blockquote .estela {
+  color: #929292;
+}
+.nota-1 .pie ul {
+  list-style: none;
+  padding: 0px;
+}
+.nota-1 .pie ul li::before {
+  content: "•";
+  margin-right: 9px;
+  color: #FC784E;
+  margin-bottom: 5px;
+}
+
+/*aca finaliza styles por Magalí */
 @media (min-width: 800px) {
   /*------------------------------------------*/
   /*styles para Home*/
@@ -946,6 +970,12 @@ body {
     margin-bottom: 18px;
   }
   .column_der .nota-1 .cuerpo_entrada {
+    font-size: 13px;
+    height: 70px;
+  }
+
+  /*styles por Magalí*/
+  .nota-1 .pie {
     font-size: 13px;
   }
 }
