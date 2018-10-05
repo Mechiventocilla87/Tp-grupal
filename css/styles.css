@@ -18,7 +18,6 @@ header {
   background-color: orangered;
   font-family: "IBM Plex Mono", monospace;
   border-radius: 10px;
-  margin: 5px;
 }
 
 .dropbtn-m {
@@ -144,9 +143,14 @@ header {
   top: 60px;
   left: 70px;
 }
-.secciones .button:hover {
-  background-color: orangered;
+.secciones:hover {
   cursor: pointer;
+}
+.secciones:hover .button:hover {
+  background-color: orangered;
+}
+.secciones .link-r {
+  text-decoration: none;
 }
 
 /*aca finaliza styles por Micol */
@@ -589,6 +593,7 @@ body {
     display: none;
     position: absolute;
     list-style: none;
+    z-index: 10;
   }
   .navbar-d .platos:hover .submenu {
     display: block;

@@ -20,7 +20,7 @@ header {
    background-color: orangered;
    font-family: 'IBM Plex Mono', monospace;
    border-radius: 10px;
-   margin: 5px;
+   
 }
 .dropbtn-m {
    background-color: orangered;
@@ -146,11 +146,16 @@ header {
        top: 60px;
        left: 70px;
    }
-   .button:hover {
-       background-color: orangered;
-       cursor: pointer;
+   &:hover {
+      cursor: pointer;
+      .button:hover {
+        background-color: orangered;
+      } 
    }
-
+   .link-r {
+     text-decoration: none;
+   }
+   
 }
 /*aca finaliza styles por Micol */
 
@@ -640,6 +645,7 @@ body{
            display: none;
            position: absolute;
            list-style: none;
+           z-index: 10;
    }
    .platos:hover .submenu {
            display:block;
@@ -700,6 +706,8 @@ body{
   }
   }
   /*aca finaliza styles por Micol */
+
+
   /*styles por Mercedes Ventocilla */
   .video_perfil_notas{
     display: flex;
