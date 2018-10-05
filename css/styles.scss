@@ -600,6 +600,7 @@ body{
       }
       .cuerpo_entrada{
         @include estilos_cuerpo_entrada;
+        height: 180px;
       }
 
     }

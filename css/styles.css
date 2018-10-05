@@ -14,7 +14,7 @@ header {
 }
 
 .navbar-m {
-  width: 95%;
+  width: 100%;
   background-color: orangered;
   font-family: "IBM Plex Mono", monospace;
   border-radius: 10px;
@@ -548,6 +548,7 @@ body {
   font-weight: normal;
   color: #929292;
   font-size: 17px;
+  height: 180px;
 }
 
 /*styles por Magalí */
