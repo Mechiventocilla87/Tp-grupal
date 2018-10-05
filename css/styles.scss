@@ -1,3 +1,8 @@
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*Naty por favor recuerda que los hovers del carrousel se ven bien en la compu de adri, a pesar de que nos repartimos las secciones
+a cada una y detallamos nuestros nombres siepre nos mestimos todas en el codigo de cada una*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
 /*------------------------------------------*/
 /*styles para Home*/
 /*------------------------------------------*/
@@ -20,7 +25,7 @@ header {
    background-color: orangered;
    font-family: 'IBM Plex Mono', monospace;
    border-radius: 10px;
-   
+
 }
 .dropbtn-m {
    background-color: orangered;
@@ -58,6 +63,10 @@ header {
    text-decoration: none;
    display: block;
    cursor: pointer;
+   a{
+     text-decoration: none;
+     color: white;
+   }
 }
 .menux-mobile {
    display: block;
@@ -122,6 +131,7 @@ header {
          display: none;
        }
        }
+
 /* aca finaliza styles por Adriana Montilla */
 
 /*styles por Micol */
@@ -147,17 +157,21 @@ header {
        position: absolute;
        top: 60px;
        left: 70px;
+
    }
    &:hover {
       cursor: pointer;
       .button:hover {
         background-color: orangered;
-      } 
+      }
+
    }
+
    .link-r {
      text-decoration: none;
+     color: black;
    }
-   
+
 }
 /*aca finaliza styles por Micol */
 
@@ -245,20 +259,23 @@ body{
   }
 }
 
- .nota-1{
-   .fecha_comentarios{
-     display: flex;
-     justify-content: space-between;
-     .autor{
-       @include texto_descripcion_arriba;
-       width: 50%;
-       text-align: center;
-       p{
-         margin: 0;
-       }
-     }
-   }
- }
+.nota-1{
+  .fecha_comentarios{
+    display: flex;
+    justify-content: space-between;
+    .autor{
+      width: 50%;
+      text-align: center;
+      @include texto_descripcion_arriba;
+
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+
 
  .fecha_comentarios{
   .iconos{
@@ -593,7 +610,7 @@ body{
           justify-content: space-between;
 
         }
-      }
+     }
       .titulo_entrada{
         @include estilos_titulo_entrada;
         margin-left: 20px;
@@ -665,6 +682,10 @@ body{
            justify-content: center;
            justify-content: space-around;
            cursor: pointer;
+           a{
+             text-decoration: none;
+             color: black;
+           }
    }
    .dropdown-content-d li:hover {
            color: orangered;

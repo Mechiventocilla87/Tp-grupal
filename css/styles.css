@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*Naty por favor recuerda que los hovers del carrousel se ven bien en la compu de adri, a pesar de que nos repartimos las secciones
+a cada una y detallamos nuestros nombres siepre nos mestimos todas en el codigo de cada una*/
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------*/
 /*styles para Home*/
 /*------------------------------------------*/
@@ -54,6 +58,10 @@ header {
   text-decoration: none;
   display: block;
   cursor: pointer;
+}
+.dropdown-content-m li a {
+  text-decoration: none;
+  color: white;
 }
 
 .menux-mobile {
@@ -151,6 +159,7 @@ header {
 }
 .secciones .link-r {
   text-decoration: none;
+  color: black;
 }
 
 /*aca finaliza styles por Micol */
@@ -194,11 +203,11 @@ body .fila_video_perfil .video .video_descripcion {
   justify-content: space-between;
 }
 .nota-1 .fecha_comentarios .autor {
+  width: 50%;
+  text-align: center;
   font-family: "IBM Plex Mono", monospace;
   color: #929292;
   font-size: 14px;
-  width: 50%;
-  text-align: center;
 }
 .nota-1 .fecha_comentarios .autor p {
   margin: 0;
@@ -607,6 +616,10 @@ body {
     justify-content: center;
     justify-content: space-around;
     cursor: pointer;
+  }
+  .navbar-d .dropdown-content-d a {
+    text-decoration: none;
+    color: black;
   }
   .navbar-d .dropdown-content-d li:hover {
     color: orangered;
